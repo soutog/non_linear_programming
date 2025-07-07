@@ -1,2 +1,2 @@
-# stochastic_programming
+# Non Linear Programming
 Stochastic Programming Artefacts
