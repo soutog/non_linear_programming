@@ -1,0 +1,11 @@
+1 Var Declarations
+    theta : Size=1, Index=None
+        Key  : Lower               : Value : Upper              : Fixed : Stale : Domain
+        None : -1.5707963267948966 :   0.2 : 1.5707963267948966 : False : False :  Reals
+
+1 Objective Declarations
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Sense    : Expression
+        None :   True : minimize : -392.40000000000003*sin(theta)
+
+2 Declarations: theta obj

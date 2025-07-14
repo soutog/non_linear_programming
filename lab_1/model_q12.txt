@@ -1,0 +1,42 @@
+2 RangeSet Declarations
+    I : Dimen=1, Size=2, Bounds=(1, 2)
+        Key  : Finite : Members
+        None :   True :   [1:2]
+    J : Dimen=1, Size=4, Bounds=(1, 4)
+        Key  : Finite : Members
+        None :   True :   [1:4]
+
+3 Var Declarations
+    X : Size=2, Index=I
+        Key : Lower : Value : Upper : Fixed : Stale : Domain
+          1 :  None :  None :  None : False :  True :  Reals
+          2 :  None :  None :  None : False :  True :  Reals
+    Y : Size=2, Index=I
+        Key : Lower : Value : Upper : Fixed : Stale : Domain
+          1 :  None :  None :  None : False :  True :  Reals
+          2 :  None :  None :  None : False :  True :  Reals
+    q : Size=8, Index=I*J
+        Key    : Lower : Value : Upper : Fixed : Stale : Domain
+        (1, 1) :     0 :  None :  None : False :  True :  Reals
+        (1, 2) :     0 :  None :  None : False :  True :  Reals
+        (1, 3) :     0 :  None :  None : False :  True :  Reals
+        (1, 4) :     0 :  None :  None : False :  True :  Reals
+        (2, 1) :     0 :  None :  None : False :  True :  Reals
+        (2, 2) :     0 :  None :  None : False :  True :  Reals
+        (2, 3) :     0 :  None :  None : False :  True :  Reals
+        (2, 4) :     0 :  None :  None : False :  True :  Reals
+
+1 Objective Declarations
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Sense    : Expression
+        None :   True : minimize : q[1,1]*sqrt(X[1]**2 + Y[1]**2 + 1e-06) + q[1,2]*sqrt((X[1] - 10.0)**2 + Y[1]**2 + 1e-06) + q[1,3]*sqrt(X[1]**2 + (Y[1] - 12.0)**2 + 1e-06) + q[1,4]*sqrt((X[1] - 10.0)**2 + (Y[1] - 12.0)**2 + 1e-06) + q[2,1]*sqrt(X[2]**2 + Y[2]**2 + 1e-06) + q[2,2]*sqrt((X[2] - 10.0)**2 + Y[2]**2 + 1e-06) + q[2,3]*sqrt(X[2]**2 + (Y[2] - 12.0)**2 + 1e-06) + q[2,4]*sqrt((X[2] - 10.0)**2 + (Y[2] - 12.0)**2 + 1e-06)
+
+1 Constraint Declarations
+    demand : Size=4, Index=J, Active=True
+        Key : Lower : Body            : Upper : Active
+          1 :  20.0 : q[1,1] + q[2,1] :  +Inf :   True
+          2 :  25.0 : q[1,2] + q[2,2] :  +Inf :   True
+          3 :  15.0 : q[1,3] + q[2,3] :  +Inf :   True
+          4 :  10.0 : q[1,4] + q[2,4] :  +Inf :   True
+
+7 Declarations: I J X Y q demand obj

@@ -1,0 +1,19 @@
+2 Var Declarations
+    x : Size=1, Index=None
+        Key  : Lower : Value : Upper : Fixed : Stale : Domain
+        None :  None :   3.0 :  None : False : False :  Reals
+    y : Size=1, Index=None
+        Key  : Lower : Value : Upper : Fixed : Stale : Domain
+        None :  None :   2.5 :  None : False : False :  Reals
+
+1 Objective Declarations
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Sense    : Expression
+        None :   True : minimize : sqrt((1.0 - x)**2 + (2.0 - y)**2) + sqrt((5.0 - x)**2 + (3.0 - y)**2)
+
+1 Constraint Declarations
+    line : Size=1, Index=None, Active=True
+        Key  : Lower : Body  : Upper : Active
+        None :   4.0 : x + y :   4.0 :   True
+
+4 Declarations: x y line obj

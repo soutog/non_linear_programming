@@ -1,0 +1,19 @@
+2 Var Declarations
+    h : Size=1, Index=None
+        Key  : Lower : Value : Upper : Fixed : Stale : Domain
+        None :     0 :  None :  None : False :  True :  Reals
+    r : Size=1, Index=None
+        Key  : Lower : Value : Upper : Fixed : Stale : Domain
+        None :     0 :  None :  None : False :  True :  Reals
+
+1 Objective Declarations
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Sense    : Expression
+        None :   True : maximize : 3.141592653589793*r*r*h
+
+1 Constraint Declarations
+    con1 : Size=1, Index=None, Active=True
+        Key  : Lower : Body                        : Upper : Active
+        None :  -Inf : 6.283185307179586*r*(r + h) :  10.0 :   True
+
+4 Declarations: h r con1 obj
