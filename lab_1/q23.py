@@ -32,7 +32,7 @@ mdl.obj = pe.Objective(
 )
 
 
-# ---------- SOLVER ----------
+# Solver
 
 ff = open("model_q23.txt", "w")
 mdl.pprint(ostream=ff)
@@ -42,7 +42,7 @@ solver = pe.SolverFactory("ipopt")
 solver.options["tol"] = 1e-9
 res = solver.solve(mdl)
 
-# ---------- RESULTADOS ----------
+# Resultados
 print(f"x_B = {mdl.xb.value:.4f},  y_B = {mdl.yb.value:.4f}")
 print(f"x_C = {mdl.xc.value:.4f},  y_C = {mdl.yc.value:.4f}")
 print("status:", res.solver.status, " –", res.solver.termination_condition)

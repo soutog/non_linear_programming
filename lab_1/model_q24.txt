@@ -1,0 +1,46 @@
+2 Var Declarations
+    x : Size=10, Index={0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+        Key : Lower : Value : Upper : Fixed : Stale : Domain
+          0 :  None :  None :  None : False :  True :  Reals
+          1 :  None :  None :  None : False :  True :  Reals
+          2 :  None :  None :  None : False :  True :  Reals
+          3 :  None :  None :  None : False :  True :  Reals
+          4 :  None :  None :  None : False :  True :  Reals
+          5 :  None :  None :  None : False :  True :  Reals
+          6 :  None :  None :  None : False :  True :  Reals
+          7 :  None :  None :  None : False :  True :  Reals
+          8 :  None :  None :  None : False :  True :  Reals
+          9 :  None :  None :  None : False :  True :  Reals
+    y : Size=10, Index={0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+        Key : Lower : Value : Upper : Fixed : Stale : Domain
+          0 :  None :  None :  None : False :  True :  Reals
+          1 :  None :  None :  None : False :  True :  Reals
+          2 :  None :  None :  None : False :  True :  Reals
+          3 :  None :  None :  None : False :  True :  Reals
+          4 :  None :  None :  None : False :  True :  Reals
+          5 :  None :  None :  None : False :  True :  Reals
+          6 :  None :  None :  None : False :  True :  Reals
+          7 :  None :  None :  None : False :  True :  Reals
+          8 :  None :  None :  None : False :  True :  Reals
+          9 :  None :  None :  None : False :  True :  Reals
+
+1 Objective Declarations
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Sense    : Expression
+        None :   True : minimize : 1.0/sqrt((x[0] - x[1])*(x[0] - x[1]) + (y[0] - y[1])*(y[0] - y[1])) + 1.0/sqrt((x[0] - x[2])*(x[0] - x[2]) + (y[0] - y[2])*(y[0] - y[2])) + 1.0/sqrt((x[0] - x[3])*(x[0] - x[3]) + (y[0] - y[3])*(y[0] - y[3])) + 1.0/sqrt((x[0] - x[4])*(x[0] - x[4]) + (y[0] - y[4])*(y[0] - y[4])) + 1.0/sqrt((x[0] - x[5])*(x[0] - x[5]) + (y[0] - y[5])*(y[0] - y[5])) + 1.0/sqrt((x[0] - x[6])*(x[0] - x[6]) + (y[0] - y[6])*(y[0] - y[6])) + 1.0/sqrt((x[0] - x[7])*(x[0] - x[7]) + (y[0] - y[7])*(y[0] - y[7])) + 1.0/sqrt((x[0] - x[8])*(x[0] - x[8]) + (y[0] - y[8])*(y[0] - y[8])) + 1.0/sqrt((x[0] - x[9])*(x[0] - x[9]) + (y[0] - y[9])*(y[0] - y[9])) + 1.0/sqrt((x[1] - x[2])*(x[1] - x[2]) + (y[1] - y[2])*(y[1] - y[2])) + 1.0/sqrt((x[1] - x[3])*(x[1] - x[3]) + (y[1] - y[3])*(y[1] - y[3])) + 1.0/sqrt((x[1] - x[4])*(x[1] - x[4]) + (y[1] - y[4])*(y[1] - y[4])) + 1.0/sqrt((x[1] - x[5])*(x[1] - x[5]) + (y[1] - y[5])*(y[1] - y[5])) + 1.0/sqrt((x[1] - x[6])*(x[1] - x[6]) + (y[1] - y[6])*(y[1] - y[6])) + 1.0/sqrt((x[1] - x[7])*(x[1] - x[7]) + (y[1] - y[7])*(y[1] - y[7])) + 1.0/sqrt((x[1] - x[8])*(x[1] - x[8]) + (y[1] - y[8])*(y[1] - y[8])) + 1.0/sqrt((x[1] - x[9])*(x[1] - x[9]) + (y[1] - y[9])*(y[1] - y[9])) + 1.0/sqrt((x[2] - x[3])*(x[2] - x[3]) + (y[2] - y[3])*(y[2] - y[3])) + 1.0/sqrt((x[2] - x[4])*(x[2] - x[4]) + (y[2] - y[4])*(y[2] - y[4])) + 1.0/sqrt((x[2] - x[5])*(x[2] - x[5]) + (y[2] - y[5])*(y[2] - y[5])) + 1.0/sqrt((x[2] - x[6])*(x[2] - x[6]) + (y[2] - y[6])*(y[2] - y[6])) + 1.0/sqrt((x[2] - x[7])*(x[2] - x[7]) + (y[2] - y[7])*(y[2] - y[7])) + 1.0/sqrt((x[2] - x[8])*(x[2] - x[8]) + (y[2] - y[8])*(y[2] - y[8])) + 1.0/sqrt((x[2] - x[9])*(x[2] - x[9]) + (y[2] - y[9])*(y[2] - y[9])) + 1.0/sqrt((x[3] - x[4])*(x[3] - x[4]) + (y[3] - y[4])*(y[3] - y[4])) + 1.0/sqrt((x[3] - x[5])*(x[3] - x[5]) + (y[3] - y[5])*(y[3] - y[5])) + 1.0/sqrt((x[3] - x[6])*(x[3] - x[6]) + (y[3] - y[6])*(y[3] - y[6])) + 1.0/sqrt((x[3] - x[7])*(x[3] - x[7]) + (y[3] - y[7])*(y[3] - y[7])) + 1.0/sqrt((x[3] - x[8])*(x[3] - x[8]) + (y[3] - y[8])*(y[3] - y[8])) + 1.0/sqrt((x[3] - x[9])*(x[3] - x[9]) + (y[3] - y[9])*(y[3] - y[9])) + 1.0/sqrt((x[4] - x[5])*(x[4] - x[5]) + (y[4] - y[5])*(y[4] - y[5])) + 1.0/sqrt((x[4] - x[6])*(x[4] - x[6]) + (y[4] - y[6])*(y[4] - y[6])) + 1.0/sqrt((x[4] - x[7])*(x[4] - x[7]) + (y[4] - y[7])*(y[4] - y[7])) + 1.0/sqrt((x[4] - x[8])*(x[4] - x[8]) + (y[4] - y[8])*(y[4] - y[8])) + 1.0/sqrt((x[4] - x[9])*(x[4] - x[9]) + (y[4] - y[9])*(y[4] - y[9])) + 1.0/sqrt((x[5] - x[6])*(x[5] - x[6]) + (y[5] - y[6])*(y[5] - y[6])) + 1.0/sqrt((x[5] - x[7])*(x[5] - x[7]) + (y[5] - y[7])*(y[5] - y[7])) + 1.0/sqrt((x[5] - x[8])*(x[5] - x[8]) + (y[5] - y[8])*(y[5] - y[8])) + 1.0/sqrt((x[5] - x[9])*(x[5] - x[9]) + (y[5] - y[9])*(y[5] - y[9])) + 1.0/sqrt((x[6] - x[7])*(x[6] - x[7]) + (y[6] - y[7])*(y[6] - y[7])) + 1.0/sqrt((x[6] - x[8])*(x[6] - x[8]) + (y[6] - y[8])*(y[6] - y[8])) + 1.0/sqrt((x[6] - x[9])*(x[6] - x[9]) + (y[6] - y[9])*(y[6] - y[9])) + 1.0/sqrt((x[7] - x[8])*(x[7] - x[8]) + (y[7] - y[8])*(y[7] - y[8])) + 1.0/sqrt((x[7] - x[9])*(x[7] - x[9]) + (y[7] - y[9])*(y[7] - y[9])) + 1.0/sqrt((x[8] - x[9])*(x[8] - x[9]) + (y[8] - y[9])*(y[8] - y[9]))
+
+1 Constraint Declarations
+    circle : Size=10, Index={0, 1, 2, 3, 4, 5, 6, 7, 8, 9}, Active=True
+        Key : Lower : Body              : Upper : Active
+          0 :  25.0 : x[0]**2 + y[0]**2 :  25.0 :   True
+          1 :  25.0 : x[1]**2 + y[1]**2 :  25.0 :   True
+          2 :  25.0 : x[2]**2 + y[2]**2 :  25.0 :   True
+          3 :  25.0 : x[3]**2 + y[3]**2 :  25.0 :   True
+          4 :  25.0 : x[4]**2 + y[4]**2 :  25.0 :   True
+          5 :  25.0 : x[5]**2 + y[5]**2 :  25.0 :   True
+          6 :  25.0 : x[6]**2 + y[6]**2 :  25.0 :   True
+          7 :  25.0 : x[7]**2 + y[7]**2 :  25.0 :   True
+          8 :  25.0 : x[8]**2 + y[8]**2 :  25.0 :   True
+          9 :  25.0 : x[9]**2 + y[9]**2 :  25.0 :   True
+
+4 Declarations: x y circle obj
